@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Electron Screen Recorder</title>
+        <link rel="stylesheet" href="index.css" />
+        <script defer src="render.js"></script>
+        <link href="/index.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="w-full bg-blue-400 text-white text-sm font-bold p-4 fixed">
+            Electron Screen Recorder
+        </div>
+
+        <div
+            class="pt-20 flex flex-row w-full justify-center items-center mb-4"
+        >
+            <video class="w-11/12 border p-2"></video>
+        </div>
+
+        <div class="flex flex-row justify-center items-center gap-3 mb-4">
+            <button
+                id="startBtn"
+                class="
+                    px-4
+                    py-2
+                    rounded
+                    text-white text-xs
+                    font-bold
+                    border-2 border-blue-500
+                    bg-blue-500
+                    focus:outline-none
+                    hover:bg-blue-600
+                    hover:border-blue-600
+                "
+            >
+                Start
+            </button>
+            <button
+                id="stopBtn"
+                class="
+                    px-4
+                    py-2
+                    rounded
+                    text-blue-500 text-xs
+                    font-bold
+                    border-2 border-blue-500
+                    focus:outline-none
+                    hover:bg-red-500
+                    hover:border-red-500
+                    hover:text-white
+                "
+            >
+                Stop
+            </button>
+        </div>
+
+        <hr class="w-full mb-4" />
+
+        <div class="flex items-center justify-center mb-4">
+            <button
+                id="videoSelectBtn"
+                class="
+                    px-4
+                    py-2
+                    rounded
+                    text-white text-xs
+                    font-bold
+                    border-2 border-blue-500
+                    bg-blue-500
+                    focus:outline-none
+                    hover:bg-blue-600
+                    hover:border-blue-600
+                "
+            >
+                Choose a video source
+            </button>
+        </div>
+    </body>
+</html>
